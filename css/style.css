@@ -1,0 +1,68 @@
+
+
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 700;
+	src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('../fonts/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 500;
+	src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('../fonts/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/GmarketSansMedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 300;
+	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('../fonts/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* RESET */
+*{margin:0;padding:0}
+ul,ol{list-style:none}
+button{-webkit-border-radius:0;border-radius:0;background-color:transparent;cursor:pointer}
+a,a:hover,a:active,a:focus{text-decoration:none}
+em,address{font-style:normal}
+table{border-collapse:collapse;border-spacing:0}
+iframe,fieldset,img,button{border:0 none}
+textarea{resize:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+img{vertical-align:top}
+hr{display:none}
+
+/* font rule */
+body,table,input,textarea,select,button,th,td,input,select,textarea,th,td,p,dl,dt,dd,li,pre{
+	font-family: 'Gmarket Sans';
+	font-weight:500;
+    background-color: #F6F5F7;
+}
+/* body {
+    line-height: 1;
+    
+    font-family: "Montserrat","Gmarket Sans", Helvetica, Arial, sean-serif !important;
+} */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* order */
+.order_btn_ar {
+    display: flex;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #00283F;
+    color: #fff;
+    justify-content: space-between;
+}
+.total {display: flex; align-items: center;}
+.total small {padding-left:20px;font-weight: 500; margin-right: 10px; line-height: 100%;}
+.total strong {display:inline-block; color: #fff; font-weight: 700; font-size: 20px;line-height: 100%}
+.order_btn {  width:45%; background: #FACF17;color: #00283F; font-size: 25px; text-align: center; font-weight: 700; padding: 18px 0 15px;border: 0;}
+
+/* footer */
