@@ -36,17 +36,35 @@ hr{display:none}
 body,table,input,textarea,select,button,th,td,input,select,textarea,th,td,p,dl,dt,dd,li,pre{
 	font-family: 'Gmarket Sans';
 	font-weight:500;
+    
+}
+body {
     background-color: #F6F5F7;
 }
-/* body {
-    line-height: 1;
-    
-    font-family: "Montserrat","Gmarket Sans", Helvetica, Arial, sean-serif !important;
-} */
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.label {border-radius: 6px; padding: 6px 10px;}
+.label_blue {background-color: #D6F4F8;color:#0095A7;}
+.label_orange {background-color: #FFF0E1;color: #FF7B00;}
+
+/* card */
+.card {
+	background-clip: padding-box;
+    box-shadow: 0 .1875rem .75rem 0 rgba(47, 43, 61, .14);
+	background-color: #ffffff;
+    background-clip: border-box;
+    border-radius: 0.375rem;
+	padding: 30px 20px 40px;
+}
+
+/* 입금계좌 */
+.account ul {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* order */
@@ -66,3 +84,6 @@ table {
 .order_btn {  width:45%; background: #FACF17;color: #00283F; font-size: 25px; text-align: center; font-weight: 700; padding: 18px 0 15px;border: 0;}
 
 /* footer */
+footer {font-size: 14px; padding-bottom: 80px;}
+footer ul {display: flex;flex-wrap: wrap}
+footer ul li {margin-right: 10px;font-size: 11px;}
