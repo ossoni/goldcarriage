@@ -48,46 +48,48 @@
                     <ul class="product_list">
                         <li>
                             <div class="product_box">
-                                <h4 class="product_box_name">apple watch 1g</h4>
-                                <div class="product_box_set" style="position: relative;">
-                                    <div class="product_box_price">25,600원</div><!---->
-                                    <div class="product_box_count">
-                                        <div class="spinner_box"><button
-                                                class="calc_button decrement">-</button><input type="number"
-                                                min="0"
-                                                style="background-color: rgb(255, 255, 255); border-left: 1px solid rgb(204, 204, 204); border-right: 1px solid rgb(204, 204, 204);"><button
-                                                class="calc_button increment">+</button></div>
-                                    </div>
+                                <div class="product_box_set">
+                                    <h4 class="product_box_name">apple watch 1g</h4>
+                                    <div class="product_box_price">9,000,000원</div>
                                 </div>
                                 <div class="product_box_price">
+                                    <div class="product_box_count">
+                                        <span>수량</span>
+                                        <select name="" id="">
+                                            <option value="">0</option>
+                                            <option value="" selected>1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
                                     <div class="product_box_price_inner">
-                                        <div>주문금액</div>
-                                        <div class="product_box_price_number">0원</div>
+                                        <div class="product_box_price_number">9,000,000원</div>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="product_box">
-                                <h4 class="product_box_name">구지뽕 1키로 5자루</h4>
-                                <div class="product_box_set" style="position: relative;">
+                                <div class="product_box_set">
+                                    <h4 class="product_box_name">구지뽕 1키로 5자루 구지뽕 1키로 5자루 <strong class="stockComment label label_red"><span class="stockNone">[품절]</span></strong></h4>
                                     <div class="product_box_price">85,310원</div>
-                                    <div class="stockComment"><span class="stockNone">[품절]</span></div>
-                                    <div class="product_box_count">
-                                        <div class="spinner_box"><button
-                                                class="calc_button decrement">-</button><input type="number"
-                                                min="0" disabled=""
-                                                style="background-color: rgb(255, 255, 255); border-left: 1px solid rgb(204, 204, 204); border-right: 1px solid rgb(204, 204, 204);"><button
-                                                class="calc_button increment">+</button></div>
-                                    </div>
                                 </div>
                                 <div class="product_box_price">
+                                    <div class="product_box_count">
+                                        <span>수량</span>
+                                        <select name="" id="" disabled>
+                                            <option value="">0</option>
+                                        </select>
+                                    </div>
                                     <div class="product_box_price_inner">
-                                        <div>주문금액</div>
                                         <div class="product_box_price_number">0원</div>
                                     </div>
                                 </div>
                             </div>
+
                         </li>
                     </ul>
                 </div>
@@ -97,11 +99,11 @@
                         <div class="product_box_price_total">
                             <div class="product_box_price_total_inner">
                                 <span>총 주문금액</span>
-                                <strong class="product_box_price_total_number">0원</strong>
+                                <strong class="product_box_price_total_number">9,000,000원</strong>
                             </div>
                             <div class="product_box_price_total_inner">
                                 <span>총 결제금액</span>
-                                <strong class="product_box_price_total_number">0원</strong>
+                                <strong class="product_box_price_total_number total">9,000,000원</strong>
                             </div>
                         </div>
                     </div>
@@ -112,37 +114,34 @@
                 <div class="invoice_ar">
                     <h2>상품정보 List</h2>
                     <div class="order_box">
-                        <h4>주&nbsp;&nbsp;문&nbsp;&nbsp;서</h4>
                         <div class="order_input_box">
                             <form autocomplete="off">
                                 <div class="tr_row">
-                                    <div class="tr_row_th">배송방법<span>*</span></div>
-                                    <div class="tr_row_td"><select class="product_delivery_way border-radius-5">
+                                    <div class="tr_row_th"><strong>*</strong> <label for="">배송방법</label></div>
+                                    <div class="tr_row_td">
+                                        <select class="product_delivery_way">
                                             <option>픽업 강동지점</option>
                                             <option>픽업 하남지점</option>
                                             <option>픽업 미사지점</option>
                                             <option>배달요청</option>
-                                        </select></div>
-                                </div>
-                                <div class="tr_row">
-                                    <div class="tr_row_th">주문자(닉네임)<span>*</span></div>
-                                    <div class="tr_row_td"><input type="text" name="name" class="border-radius-5">
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="tr_row">
-                                    <div class="tr_row_th">연락처<span>*</span></div>
-                                    <div class="tr_row_td"><input type="tel" name="phone"
-                                            placeholder="- 없이 숫자만 입력해주세요" class="border-radius-5"></div>
+                                    <div class="tr_row_th"><strong>*</strong> <label for="name">주문자(닉네임)</label></div>
+                                    <div class="tr_row_td"><input type="text" name="name" placeholder="주문자명을 입력하세요."></div>
                                 </div>
                                 <div class="tr_row">
-                                    <div class="tr_row_th">요청사항</div>
-                                    <div class="tr_row_td"><textarea name="memo" class="border-radius-5"
-                                            style="height: 40px;"></textarea></div>
+                                    <div class="tr_row_th"><strong>*</strong> <label for="phone">연락처</label></div>
+                                    <div class="tr_row_td"><input type="tel" name="phone" placeholder="숫자만 입력. ex) 01012341111"></div>
                                 </div>
                                 <div class="tr_row">
-                                    <div class="tr_row_th">입금자명<span>*</span></div>
-                                    <div class="tr_row_td"><input type="text" name="depositorName"
-                                            class="border-radius-5"></div>
+                                    <div class="tr_row_th"><strong>*</strong> <label for="depositorName">입금자명</label></div>
+                                    <div class="tr_row_td"><input type="text" name="depositorName" placeholder="입금자명을 입력하세요."></div>
+                                </div>
+                                <div class="tr_row">
+                                    <div class="tr_row_th"><label for="memo">요청사항</label></div>
+                                    <div class="tr_row_td"><textarea name="memo" placeholder="요청사항을 입력하세요."></textarea></div>
                                 </div>
                             </form>
                         </div>
@@ -153,72 +152,31 @@
                 <!-- begin : 입금계좌 안내 -->
                 <div class="account_ar">
                     <h2>입금계좌 안내</h2>
-                    <div class="order_box">
-                        <h4>입&nbsp;&nbsp;금&nbsp;&nbsp;안&nbsp;&nbsp;내</h4>
-                        <div class="order_input_box">
-                            <form autocomplete="off">
-                                <div class="tr_row">
-                                    <div class="tr_row_th">계좌번호</div>
-                                    <div class="tr_row_td"><span
-                                            style="padding: 5px 0px; display: block; font-weight: 300; font-size: 20px; color: blue;">하남지점_기업은행&nbsp;
-                                            &nbsp; &nbsp;08812750301010 <button type="button"
-                                                class="btn-clipboard border-radius-5">계좌번호 복사</button></span></div>
-                                </div>
-                                <div class="tr_row">
-                                    <div class="tr_row_th">예금주</div>
-                                    <div class="tr_row_td"><span
-                                            style="padding: 5px 0px; display: block; font-weight: 300; font-size: 20px; color: blue;">권정예</span>
-                                    </div>
-                                </div>
-                                <hr>
-                            </form>
-                            <form autocomplete="off">
-                                <div class="tr_row">
-                                    <div class="tr_row_th">계좌번호</div>
-                                    <div class="tr_row_td"><span
-                                            style="padding: 5px 0px; display: block; font-weight: 300; font-size: 20px; color: blue;">강동지점_국민은행&nbsp;
-                                            &nbsp; &nbsp;43050101242540 <button type="button"
-                                                class="btn-clipboard border-radius-5">계좌번호 복사</button></span></div>
-                                </div>
-                                <div class="tr_row">
-                                    <div class="tr_row_th">예금주</div>
-                                    <div class="tr_row_td"><span
-                                            style="padding: 5px 0px; display: block; font-weight: 300; font-size: 20px; color: blue;">강동지점_홍균희</span>
-                                    </div>
-                                </div>
-                                <hr>
-                            </form>
-                        </div>
+                    <div class="account">
+                        <ul>
+                            <li><span class="label label_blue">강동지점</span></li>
+                            <li><span>기업은행<small>(홍균희)</small></span> <strong>43050101242540</strong> </li>
+                            <li><button type="button" class="btn-clipboard">계좌번호 복사</button></li>
+                        </ul>
+                        <ul>
+                            <li><span class="label label_orange">하남지점</span></li>
+                            <li><span>국민은행<small>(권정예)</small></span> <strong>08812750301010</strong></li>
+                            <li><button type="button" class="btn-clipboard">계좌번호 복사</button></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- end : 입금계좌 안내 -->
                 
-                <hr class="divide border-radius-10">
-                <div class="button-box"><button type="button"  class="order-button border-radius-10">주문하기</button></div>
-                <div class="card account">
-                    <h2>입금계좌 안내</h2>
-                    <ul>
-                        <li><span class="label label_blue">강동지점</span></li>
-                        <li>기업은행(홍균희)</li>
-                        <li>08812750301010</li>
-                        <li><button type="button" class="btn-clipboard border-radius-5">계좌번호 복사</button></li>
-                    </ul>
-                    <ul>
-                        <li><span class="label label_orange">하남지점</span></li>
-                        <li>기업은행(홍균희)</li>
-                        <li>08812750301010</li>
-                        <li><button type="button" class="btn-clipboard border-radius-5">계좌번호 복사</button></li>
-                    </ul>
-                </div>
 
                 <!-- begin : 주문하기 버튼-->
                 <div class="order_btn_ar">
                     <div class="total">
-                        <small>총 주문금액</small><strong>50,000원</strong>
+                        <small>총 주문금액</small><strong>9,000,000원</strong>
                     </div>
                     <button type="button"  class="order_btn">주문하기</button>
                 </div>
                 <!-- end : 주문하기 버튼 -->
+
             </main>
             <footer>
                 <strong>상호명 : 신흥기획</strong>
@@ -228,22 +186,13 @@
                     <li>Tel: 01012341234</li>
                     <li>사업자등록번호 : 8266500250</li>
                     <li>통신판매업신고 : 2022-경기하남-2752</li>
-                    <li><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8266500250" target="_blank">사업자정보확인</a</li>
+                    <li><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8266500250" target="_blank">사업자정보확인</a></li>
                 </ul>
                 <p>© 2024 GOLD CARRIAGE</p>
             </footer>
         </div>
     </div>
 
-
-    <div id="app" data-v-app="">
-        
-    </div>
-    <span
-        style="border-radius:10px !important;text-indent:12px !important;width:auto !important;height:20px !important;padding:0px 8px !important;text-align:center !important;vertical-align:middle !important;font:bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important;color:rgb(255, 255, 255) !important;background:url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important;position:absolute !important;opacity:1 !important;z-index:9007199254740990 !important;display:none !important;cursor:pointer !important;border:none !important;-webkit-font-smoothing:antialiased !important;top:0 !important;left:0 !important;display:none !important;top:57px !important;left:558px !important">저장</span>
-    <div id="__endic_crx__">
-        <div class="css-diqpy0"></div>
-    </div>
 </body>
 
 </html>

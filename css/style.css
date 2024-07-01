@@ -50,9 +50,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.label {border-radius: 6px; padding: 6px 10px;}
+.label {border-radius: 6px; padding: 6px 10px;display: inline-block;line-height: 100%;}
 .label_blue {background-color: #D6F4F8;color:#0095A7;}
 .label_orange {background-color: #FFF0E1;color: #FF7B00;}
+.label_red {background-color:#FFE3E3; color: #FF0000; }
 
 /* layout */
 .container {
@@ -67,7 +68,9 @@ header {
     box-shadow: 0 .1875rem .75rem 0 rgba(47, 43, 61, .14);
     text-align: center;
     padding: 20px 0 ;
+    max-height: 124px;
 }
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -89,7 +92,30 @@ header {
 .notice_box .notice_title h2,
 .product_ar h2,
 .invoice_ar h2,
-.account_ar h2  {font-size: 20px; display: flex; align-items: center; justify-content: space-between;}
+.account_ar h2,
+.delivery_info h2  {font-size: 20px; display: flex; align-items: center; justify-content: space-between;}
+
+.product_ar,
+.invoice_ar,
+.account_ar,
+.delivery_info {padding-top: 40px;}
+
+.product_ar h2,
+.invoice_ar h2,
+.account_ar h2,
+.delivery_info h2 {padding-bottom: 25px;}
+
+.product_ar .product_list,
+.invoice_ar .order_input_box,
+.account,
+.delivery_msg_box {border: 1px solid rgba(0, 0, 0, .2); border-radius: 10px;}
+
+.product_ar .product_list li,
+.invoice_ar .order_input_box,
+.account,
+.order_complete,
+.delivery_msg_box {padding: 30px 20px;}
+
 /* 공지사항 */
 .notice_box {
     border-radius: 5px;
@@ -101,52 +127,94 @@ header {
     border-bottom: 1px solid rgba(40, 199, 111, .4);
     padding-bottom: 5px;
 }
-
 .notice_box .notice_title h2 i {font-size: 30px;}
-
 .notice_box .notice_content {padding: 20px 0 0;}
 
 /* 상품정보 List */
-.product_ar {padding-top: 40px;}
-.product_ar h2 {padding-bottom: 25px;}
-.product_ar .product_list {
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 10px;
-}
+.product_ar .product_list {margin-bottom: 25px;}
 .product_ar .product_list li {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding: 30px 20px;
 }
 .product_ar .product_list li:last-child {
     border-bottom: 0;
 }
+.product_ar .product_box_set { display: flex; align-items: start; justify-content: space-between; flex-wrap: nowrap; font-size: 18px; padding-bottom: 35px;}
+.product_ar .product_box_set .product_box_name {word-break: keep-all; padding-right: 10px;line-height: 25px;}
+.product_ar .product_box_set .product_box_name strong {font-size: 16px;}
+.product_ar .product_box_set .product_box_price {word-break: keep-all; color: rgba(0, 0, 0, .5);}
 
+.product_ar .product_box_price {display: flex; align-items: start; justify-content: space-between; flex-wrap: nowrap;line-height: 25px;}
+.product_ar .product_box_price span {color: rgba(0, 0, 0, .4);}
+.product_ar .product_box_price select {
+    padding-left: 10px;
+    /* height: 100%;
+    width: 100%; */
+    padding-right: 32px;
+    min-height: inherit;
+    background: none;
+    border: 0px;
+    border-radius: 2px;
+}
+.product_ar .product_box_price_number { font-size: 18px;}
 .order_total {
-    margin-top: 25px;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 20px;
 }
+
 .order_total .product_box_price_total_inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    line-height: 180%;
+    line-height: 200%;
 }
 .order_total .product_box_price_total_inner span {font-weight: 300;}
-.order_total .product_box_price_total_inner strong {font-weight: 700;}
+.order_total .product_box_price_total_inner strong {font-weight: 700;font-size: 20px;}
+.order_total .product_box_price_total_inner strong.total {color: #FF4D00;}
 
 /* 주문서 작성 */
-.invoice_ar {padding-top: 40px;}
-.invoice_ar h2 {padding-bottom: 25px;}
+.order_input_box .tr_row:not(:last-child) {padding-bottom: 30px;}
+.order_input_box .tr_row_th {padding-bottom: 4px; display: flex; align-items: center;}
+.order_input_box .tr_row_th strong {color: #FF0000;padding-right:5px;height: 10px;}
+
+.order_input_box input, 
+.order_input_box select,
+.order_input_box textarea {
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+.order_input_box select {width:100%}
+.order_input_box textarea {
+    min-height: 60px; height: 60px;
+}
+.order_input_box ::placeholder {
+    color: rgba(0, 0, 0, .3);
+    font-weight: 300;
+}
 
 /* 입금계좌 */
-.account_ar {padding-top: 40px;}
-.account_ar h2 {padding-bottom: 25px;}
+
 .account ul {
 	display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.account ul:not(:last-child) {padding-bottom: 10px;}
+.account ul li:nth-child(2) {
+    width: 65%;
+}
+.account ul span small {
+    font-size: 16px;
+    font-weight: 300;
+    padding-right: 15px;
+}
+.account ul li button {
+    border : 1px solid rgba(0, 0, 0, .2);
+    font-weight:300;
+    padding: 3px;
 }
 
 /* order */
@@ -165,12 +233,69 @@ header {
 .total strong {display:inline-block; color: #fff; font-weight: 700; font-size: 20px;line-height: 100%}
 .order_btn {  width:45%; background: #FACF17;color: #00283F; font-size: 25px; text-align: center; font-weight: 700; padding: 18px 0 15px;border: 0;}
 
+
+/* 주문완료 */
+.order_complete{text-align:center;}
+.order_complete .complete_msg {  font-size: 35px; padding-bottom: 30px;}
+.yellow_btn {background: #FACF17; padding: 10px 55px; border-radius: 6px;}
+
+
+/* 배송방법 */
+.delivery_msg_box {display: flex;}
+.delivery_msg_box ul {padding-left: 20px;flex: 1 1 auto !important;}
+.delivery_msg_box ul li span {padding-left:10px;color: rgba(0, 0, 0, .4);}
+.delivery_msg_box ul li:last-child {padding-top:15px; color: rgba(0, 0, 0, .4);}
+
 /* footer */
-footer {font-size: 14px; padding-bottom: 80px;}
-footer ul {display: flex;flex-wrap: wrap}
-footer ul li {margin-right: 10px;font-size: 11px;}
+footer {font-size: 14px; padding-top:20px; padding-bottom: 80px; color: rgba(0, 0, 0, .7);}
+footer strong {color: rgba(0, 0, 0, 1);}
+footer ul {display: flex;flex-wrap: wrap;padding: 5px 0 14px}
+footer ul li {margin-right: 10px;font-size: 12px;}
+footer ul li a {text-decoration: underline; color: #000;}
+footer p {font-size: 12px;}
+
+
+
 
 @media (max-width: 570px) {
-    header {padding: 15px 0;}
-    header .logo {max-height: 100px;}
+    header {padding: 10px 0;}
+    header .logo {max-height: 60px;height: 60px;}
+    .label_blue,
+    .label_orange {
+        min-width: 62px;
+    }
+    .account ul {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+    .account ul li:nth-child(2) {
+        padding-left: 10px;
+        line-height: 25px;
+    }
+    .account ul li:nth-child(2) strong {font-size: 20px;}
+    .account ul li button {
+        font-size: 14px;
+    }
+    .account ul:not(:last-child) {padding-bottom: 25px;}
+
+    .order_input_box .tr_row:not(:last-child) {padding-bottom: 20px;}
+    /* .order_input_box input, .order_input_box select {
+        font-size: 14px;
+    } */
+}
+
+@media (max-width: 414px) {
+    .product_ar .product_box_price select {padding-right: 15px;}
+    .account ul {flex-direction: column;}
+    .account ul span small {padding-right:0}
+    .account ul li:nth-child(2){padding-top:10px;padding-left: 0px; width: 100%; }
+    .account ul li button {margin-top: 5px;font-size: 16px;}
+    .order_btn {width: 35%;}
+    .order_complete {padding: 0 0 30px;}
+    .order_complete .complete_msg {font-size: 25px;}
+
+    .delivery_msg_box {flex-direction: column;}
+    .delivery_msg_box p {padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid rgba(0, 0, 0, .2); display: block;}
+    .delivery_msg_box ul,
+    .delivery_msg_box ul li span {padding-left: 0;}
 }
