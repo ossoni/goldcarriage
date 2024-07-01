@@ -33,13 +33,17 @@ img{vertical-align:top}
 hr{display:none}
 
 /* font rule */
-body,table,input,textarea,select,button,th,td,input,select,textarea,th,td,p,dl,dt,dd,li,pre{
+body, table, input, textarea, select, button, th, td, input, select, textarea, th, td, p, dl, dt, dd, li, pre{
 	font-family: 'Gmarket Sans';
 	font-weight:500;
-    
+    font-size: 16px;
 }
+h1, h2, h3, h4, h5, h6, strong {font-weight: 500;}
 body {
+    position: absolute;
     background-color: #F6F5F7;
+    left: 0;
+    right: 0;
 }
 
 table {
@@ -50,6 +54,28 @@ table {
 .label_blue {background-color: #D6F4F8;color:#0095A7;}
 .label_orange {background-color: #FFF0E1;color: #FF7B00;}
 
+/* layout */
+.container {
+    width: calc(100% - 30px);
+    max-width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 10px;
+}
+header {
+    background: #fff;
+    box-shadow: 0 .1875rem .75rem 0 rgba(47, 43, 61, .14);
+    text-align: center;
+    padding: 20px 0 ;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 /* card */
 .card {
 	background-clip: padding-box;
@@ -59,8 +85,64 @@ table {
     border-radius: 0.375rem;
 	padding: 30px 20px 40px;
 }
+.notice_box .notice_title,  
+.notice_box .notice_title h2,
+.product_ar h2,
+.invoice_ar h2,
+.account_ar h2  {font-size: 20px; display: flex; align-items: center; justify-content: space-between;}
+/* 공지사항 */
+.notice_box {
+    border-radius: 5px;
+    background-color: #DDF6E8;
+    color: #0FA150;
+    padding: 20px;
+}
+.notice_box .notice_title {
+    border-bottom: 1px solid rgba(40, 199, 111, .4);
+    padding-bottom: 5px;
+}
+
+.notice_box .notice_title h2 i {font-size: 30px;}
+
+.notice_box .notice_content {padding: 20px 0 0;}
+
+/* 상품정보 List */
+.product_ar {padding-top: 40px;}
+.product_ar h2 {padding-bottom: 25px;}
+.product_ar .product_list {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.product_ar .product_list li {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 30px 20px;
+}
+.product_ar .product_list li:last-child {
+    border-bottom: 0;
+}
+
+.order_total {
+    margin-top: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+.order_total .product_box_price_total_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 180%;
+}
+.order_total .product_box_price_total_inner span {font-weight: 300;}
+.order_total .product_box_price_total_inner strong {font-weight: 700;}
+
+/* 주문서 작성 */
+.invoice_ar {padding-top: 40px;}
+.invoice_ar h2 {padding-bottom: 25px;}
 
 /* 입금계좌 */
+.account_ar {padding-top: 40px;}
+.account_ar h2 {padding-bottom: 25px;}
 .account ul {
 	display: flex;
     align-items: center;
@@ -87,3 +169,8 @@ table {
 footer {font-size: 14px; padding-bottom: 80px;}
 footer ul {display: flex;flex-wrap: wrap}
 footer ul li {margin-right: 10px;font-size: 11px;}
+
+@media (max-width: 570px) {
+    header {padding: 15px 0;}
+    header .logo {max-height: 100px;}
+}
