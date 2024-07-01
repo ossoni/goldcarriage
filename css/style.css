@@ -171,6 +171,9 @@ header {
     border-image: initial;
     border-radius: 0px;
 }
+.product_ar .product_box_price select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
 .product_ar .product_box_price select {
     padding-left: 10px;
     /* height: 100%;
@@ -180,7 +183,11 @@ header {
     background: none;
     border: 0px;
     border-radius: 2px;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none; 
 }
+
 .product_ar .product_box_price_number { font-size: 18px;}
 .order_total {
     border: 1px solid #000;
