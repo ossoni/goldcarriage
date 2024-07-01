@@ -186,6 +186,7 @@ header {
     appearance: none; 
     -webkit-appearance: none;
     -moz-appearance: none; 
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="%23000" stroke-width="2" d="M2 5l6 6 6-6"/></svg>') no-repeat right 10px center;
 }
 
 .product_ar .product_box_price_number { font-size: 18px;}
@@ -219,7 +220,11 @@ header {
     border-radius: 5px;
     width: calc(100% - 20px);
 }
-.order_input_box select {width:100%}
+.order_input_box select {width:100%;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="%23000" stroke-width="2" d="M2 5l6 6 6-6"/></svg>') no-repeat right 10px center;}
 .order_input_box textarea {
     min-height: 60px; height: 60px;
 }
