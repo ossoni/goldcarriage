@@ -69,8 +69,7 @@
                                             <option value="10">10</option>
                                         </select>
                                     </div>
-                                    <div class="product_box_price hidden" id="input-container">
-                                        <span>수량</span>
+                                    <div class="product_box_count hidden" id="input-container">
                                         <input type="number" id="number-input" min="1" max="10">
                                     </div>
                                     <div class="product_box_price_inner">
@@ -210,7 +209,7 @@
             </footer>
         </div>
     </div>
-    
+
     <script>
         document.getElementById('number-select').addEventListener('change', function() {
           if (this.value == '10') {
