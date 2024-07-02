@@ -231,7 +231,7 @@ header {
 }
 .product_box_count input {
     border: 1px solid rgba(0, 0, 0, .2);
-    padding: 10px 10px;
+    padding: 5px;
     outline: none;
     border-radius: 5px;
 }
