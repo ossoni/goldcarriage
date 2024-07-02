@@ -135,7 +135,7 @@
                         <div class="order_input_box">
                             <form autocomplete="off">
                                 <div class="tr_row">
-                                    <div class="tr_row_th"><strong>*</strong> <label for="">배송방법</label></div>
+                                    <div class="tr_row_th"><strong>*</strong> <label>배송방법</label></div>
                                     <div class="tr_row_td">
                                         <select class="product_delivery_way">
                                             <option>픽업 강동지점</option>
@@ -147,19 +147,19 @@
                                 </div>
                                 <div class="tr_row">
                                     <div class="tr_row_th"><strong>*</strong> <label for="name">주문자(닉네임)</label></div>
-                                    <div class="tr_row_td"><input type="text" name="name" placeholder="주문자명을 입력하세요."></div>
+                                    <div class="tr_row_td"><input type="text" name="name" id="name" placeholder="주문자명을 입력하세요."></div>
                                 </div>
                                 <div class="tr_row">
                                     <div class="tr_row_th"><strong>*</strong> <label for="phone">연락처</label></div>
-                                    <div class="tr_row_td"><input type="tel" name="phone" placeholder="숫자만 입력. ex) 01012341111"></div>
+                                    <div class="tr_row_td"><input type="tel" name="phone" id="phone" placeholder="숫자만 입력. ex) 01012341111"></div>
                                 </div>
                                 <div class="tr_row">
                                     <div class="tr_row_th"><strong>*</strong> <label for="depositorName">입금자명</label></div>
-                                    <div class="tr_row_td"><input type="text" name="depositorName" placeholder="입금자명을 입력하세요."></div>
+                                    <div class="tr_row_td"><input type="text" name="depositorName" id="depositorName" placeholder="입금자명을 입력하세요."></div>
                                 </div>
                                 <div class="tr_row">
                                     <div class="tr_row_th"><label for="memo">요청사항</label></div>
-                                    <div class="tr_row_td"><textarea name="memo" placeholder="요청사항을 입력하세요."></textarea></div>
+                                    <div class="tr_row_td"><textarea name="memo" id="memo" placeholder="요청사항을 입력하세요."></textarea></div>
                                 </div>
                             </form>
                         </div>
@@ -213,7 +213,7 @@
 
     <script>
         document.getElementById('number-select').addEventListener('change', function() {
-          if (this.value == '10') {
+          if (this.value == '10+') {
             document.getElementById('select-container').classList.add('hidden');
             document.getElementById('select-container').classList.remove('visible');
             document.getElementById('input-container').classList.add('visible');
