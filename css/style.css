@@ -190,6 +190,15 @@ header {
 }
 
 .product_ar .product_box_price_number { font-size: 18px;}
+
+
+.product_box_price.hidden {
+    display: none;
+  }
+.product_box_price.visible {
+    display: inline-block;
+}
+
 .order_total {
     border: 1px solid #000;
     border-radius: 10px;
