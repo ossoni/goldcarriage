@@ -192,10 +192,10 @@ header {
 .product_ar .product_box_price_number { font-size: 18px;}
 
 
-.product_box_price.hidden {
+.product_box_price .hidden {
     display: none;
   }
-.product_box_price.visible {
+.product_box_price .visible {
     display: inline-block;
 }
 
