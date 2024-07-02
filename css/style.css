@@ -229,6 +229,13 @@ header {
     border-radius: 5px;
     width: calc(100% - 20px);
 }
+.product_box_count input {
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
 .order_input_box select {width:100%;
     appearance: none; 
     -webkit-appearance: none;
