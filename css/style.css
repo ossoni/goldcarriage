@@ -38,6 +38,7 @@ body, table, input, textarea, select, button, th, td, input, select, textarea, t
 	font-weight:500;
     font-size: 16px;
 }
+label {font-size: 14px;}
 h1, h2, h3, h4, h5, h6, strong {font-weight: 500;}
 body {
     position: absolute;
