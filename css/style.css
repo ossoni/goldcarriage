@@ -103,7 +103,7 @@ header {
 .product_ar h2,
 .invoice_ar h2,
 .account_ar h2,
-.delivery_info h2 {padding-bottom: 25px;}
+.delivery_info h2 {padding-bottom: 20px;}
 
 .product_ar .product_list,
 .account,
