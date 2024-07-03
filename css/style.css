@@ -261,8 +261,9 @@ header {
 .account ul li:nth-child(2) {
     width: 65%;
 }
+.account ul li {font-size: 16px;}
 .account ul span small {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     padding-right: 15px;
 }
@@ -327,7 +328,7 @@ footer p {font-size: 12px;}
         padding-left: 10px;
         line-height: 25px;
     }
-    .account ul li:nth-child(2) strong {font-size: 14px;}
+    /* .account ul li:nth-child(2) strong {font-size: 14px;} */
     .account ul li button {
         font-size: 14px;
     }
