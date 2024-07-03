@@ -357,7 +357,7 @@ footer p {font-size: 12px;}
     .account ul li button {margin-top: 5px;font-size: 14px;}
     .order_btn {width: 35%;}
     .order_complete {padding: 0 0 30px;}
-    /* .order_complete .complete_msg {font-size: 16px;} */
+    .order_complete .complete_msg {font-size: 20px;}
 
     .delivery_msg_box {flex-direction: column;}
     .delivery_msg_box p {padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid rgba(0, 0, 0, .2); display: block;}
