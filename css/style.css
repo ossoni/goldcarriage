@@ -36,7 +36,7 @@ hr{display:none}
 body, table, input, textarea, select, button, th, td, input, select, textarea, th, td, p, dl, dt, dd, li, pre{
 	font-family: 'Gmarket Sans';
 	font-weight:500;
-    font-size: 16px;
+    font-size: 14px;
 }
 h1, h2, h3, h4, h5, h6, strong {font-weight: 500;}
 body {
@@ -93,7 +93,7 @@ header {
 .product_ar h2,
 .invoice_ar h2,
 .account_ar h2,
-.delivery_info h2  {font-size: 20px; display: flex; align-items: center; justify-content: space-between;}
+.delivery_info h2  {font-size: 18px; display: flex; align-items: center; justify-content: space-between;}
 
 .product_ar,
 .invoice_ar,
@@ -106,12 +106,10 @@ header {
 .delivery_info h2 {padding-bottom: 25px;}
 
 .product_ar .product_list,
-.invoice_ar .order_input_box,
 .account,
 .delivery_msg_box {border: 1px solid rgba(0, 0, 0, .2); border-radius: 10px;}
 
 .product_ar .product_list li,
-.invoice_ar .order_input_box,
 .account,
 .order_complete,
 .delivery_msg_box {padding: 30px 20px;}
@@ -127,7 +125,7 @@ header {
     border-bottom: 1px solid rgba(40, 199, 111, .4);
     padding-bottom: 5px;
 }
-.notice_box .notice_title h2 i {font-size: 30px;}
+.notice_box .notice_title h2 i {font-size: 25px;}
 .notice_box .notice_content {padding: 20px 0 0;}
 
 /* 상품정보 List */
@@ -140,7 +138,7 @@ header {
 }
 .product_ar .product_box_set { display: flex; align-items: start; justify-content: space-between; flex-wrap: nowrap; font-size: 18px; padding-bottom: 35px;}
 .product_ar .product_box_set .product_box_name {word-break: keep-all; padding-right: 10px;line-height: 25px;}
-.product_ar .product_box_set .product_box_name strong {font-size: 16px;}
+.product_ar .product_box_set .product_box_name strong {font-size: 14px;}
 .product_ar .product_box_set .product_box_price {word-break: keep-all; color: rgba(0, 0, 0, .5);}
 
 .product_ar .product_box_price {display: flex; align-items: start; justify-content: space-between; flex-wrap: nowrap;line-height: 25px;}
@@ -189,7 +187,7 @@ header {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="none" stroke="%23000" stroke-width="2" d="M2 5l6 6 6-6"/></svg>') no-repeat right 10px center;
 }
 
-.product_ar .product_box_price_number { font-size: 18px;}
+.product_ar .product_box_price_number { font-size: 16px;}
 
 
 .product_box_price .hidden {
@@ -212,10 +210,13 @@ header {
     line-height: 200%;
 }
 .order_total .product_box_price_total_inner span {font-weight: 300;}
-.order_total .product_box_price_total_inner strong {font-weight: 700;font-size: 20px;}
+.order_total .product_box_price_total_inner strong {font-weight: 700;font-size: 18px;}
 .order_total .product_box_price_total_inner strong.total {color: #FF4D00;}
 
 /* 주문서 작성 */
+.invoice_ar .order_input_box {
+	
+}
 .order_input_box .tr_row:not(:last-child) {padding-bottom: 30px;}
 .order_input_box .tr_row_th {padding-bottom: 4px; display: flex; align-items: center;}
 .order_input_box .tr_row_th strong {color: #FF0000;padding-right:5px;height: 10px;}
@@ -261,7 +262,7 @@ header {
     width: 65%;
 }
 .account ul span small {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     padding-right: 15px;
 }
@@ -284,13 +285,13 @@ header {
 }
 .total {display: flex; align-items: center;}
 .total small {padding-left:20px;font-weight: 500; margin-right: 10px; line-height: 100%;}
-.total strong {display:inline-block; color: #fff; font-weight: 700; font-size: 20px;line-height: 100%}
+.total strong {display:inline-block; color: #fff; font-weight: 700; font-size: 18px;line-height: 100%}
 .order_btn {  width:45%; background: #FACF17;color: #00283F; font-size: 25px; text-align: center; font-weight: 700; padding: 18px 0 15px;border: 0;}
 
 
 /* 주문완료 */
 .order_complete{text-align:center;}
-.order_complete .complete_msg {  font-size: 35px; padding-bottom: 30px;}
+.order_complete .complete_msg {  font-size: 30px; padding-bottom: 30px;}
 .yellow_btn {background: #FACF17; padding: 10px 55px; border-radius: 6px;}
 
 
