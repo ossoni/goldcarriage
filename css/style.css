@@ -273,6 +273,7 @@ header {
     border : 1px solid rgba(0, 0, 0, .2);
     font-weight:300;
     padding: 3px;
+	min-width: 93px;
 }
 
 /* order */
