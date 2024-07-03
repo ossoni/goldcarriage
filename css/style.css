@@ -269,9 +269,11 @@ header {
 .account ul li:nth-child(2) {
     width: 65%;
 }
-/* .account ul li {font-size: 16px;} */
+.account ul li:nth-child(2) span, 
+.account ul li:nth-child(2) small, 
+.account ul li:nth-child(2) strong {font-size: 15px;}
+
 .account ul span small {
-    font-size: 16px;
     font-weight: 300;
     padding-right: 15px;
 }
